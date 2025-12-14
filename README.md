@@ -167,57 +167,44 @@ go-practice
 
 ```shell
 go-practice
+        ## >>> 
 ```
 
 このコマンドの実体は例えば 📄 `Z:/muzudho-github.com/muzudho/go-practice/go-practice.exe` といった実行ファイルだとします。  
 
-👇 以下のように応答され：  
+👇 以下のように打鍵：  
 
-```
->>> 
+```shell
+>>> set-option -n engine -v banana
+        ## [banana] 
 ```
 
 👇 以下のように打鍵：  
 
 ```shell
->>> echo-proxy -f Z:/muzudho-github.com/muzudho/go-practice/go-practice.exe
+[banana] echo-proxy -f Z:/muzudho-github.com/muzudho/go-practice/go-practice.exe
+        ## >>> 
 ```
 
 つまり、実行ファイル自身へのファイルパスを `-f` 引数に渡しています。  
-
-👇 以下のように応答され：  
-
-```
->>> 
-```
 
 👇 以下のように打鍵：  
 
 ```shell
 >>> hello
-```
-
-👇 以下のように応答され：  
-
-```
-world
->>> 
+        ## world
+        ## >>> 
 ```
 
 👇 以下のように打鍵：  
 
 ```shell
 >>> quit
-```
-
-👇 以下のように応答され：  
-
-```
->>> 
+        ## [banana]
 ```
 
 👇 以下のように再び打鍵：  
 
 ```shell
->>> quit
+[banana] quit
 ```
