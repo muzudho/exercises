@@ -122,35 +122,40 @@ go-practice
 
 ```shell
 go-practice
-```
-
-👇 以下のように応答され：  
-
-```
->>> 
-```
-
-👇 以下のように打鍵：  
-
-```shell
->>> set-option -n name -v banana
         ## ## 応答
-        ## banana> 
+        ## >>> 
 ```
 
 👇 以下のように打鍵：  
 
 ```shell
-banana> get-option -n name
+>>> get-option -n engine
+        ## ## 応答
+        ## Option not found.
+        ## >>> 
+```
+
+👇 以下のように打鍵：  
+
+```shell
+>>> set-option -n engine -v banana
+        ## ## 応答
+        ## [banana] 
+```
+
+👇 以下のように打鍵：  
+
+```shell
+[banana] get-option -n engine
         ## ## 応答
         ## banana
-        ## banana> 
+        ## [banana] 
 ```
 
 👇 以下のように打鍵：  
 
 ```shell
-banana> quit
+[banana] quit
 ```
 
 
