@@ -133,26 +133,18 @@ go-practice
 👇 以下のように打鍵：  
 
 ```shell
->>> setoption -n name -v banana
-```
-
-👇 以下のように応答され：  
-
-```
-banana> 
+>>> set-option -n name -v banana
+        ## ## 応答
+        ## banana> 
 ```
 
 👇 以下のように打鍵：  
 
 ```shell
-banana> getoption -n name
-```
-
-👇 以下のように応答：  
-
-```
-banana
-banana> 
+banana> get-option -n name
+        ## ## 応答
+        ## banana
+        ## banana> 
 ```
 
 👇 以下のように打鍵：  
